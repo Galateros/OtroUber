@@ -34,7 +34,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
             view.findNavController().navigate(R.id.despensaFragment)
         }
         agregar.setOnClickListener {
-            view.findNavController().navigate(R.id.altaFragment)
+            view.findNavController().navigate(R.id.altaFragment2)
         }
     }
 

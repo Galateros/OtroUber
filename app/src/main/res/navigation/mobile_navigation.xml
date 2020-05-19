@@ -7,13 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="edu.daec.otrouber.ui.home.HomeFragment"
+        android:name="edu.daec.otrouber.MapaFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
+        tools:layout="@layout/fragment_mapa">
 
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
+        <action
+            android:id="@+id/action_nav_home_to_despensaFragment"
+            app:destination="@id/despensaFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_altaFragment2"
+            app:destination="@id/altaFragment2" />
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
@@ -40,4 +46,14 @@
         android:name="edu.daec.otrouber.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/despensaFragment"
+        android:name="edu.daec.otrouber.DespensaFragment"
+        android:label="fragment_despensa"
+        tools:layout="@layout/fragment_despensa" />
+    <fragment
+        android:id="@+id/altaFragment2"
+        android:name="edu.daec.otrouber.AltaFragment2"
+        android:label="fragment_alta2"
+        tools:layout="@layout/fragment_alta2" />
 </navigation>
